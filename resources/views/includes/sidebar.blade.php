@@ -43,6 +43,50 @@
          </div>
      </li>
 
+     <li class="nav-item">
+         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
+             aria-expanded="true" aria-controls="collapseThree">
+             <i class="fas fa-fw fa-store"></i>
+             <span>Points</span>
+         </a>
+         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+             <div class="bg-white py-2 collapse-inner rounded">
+                 <h6 class="collapse-header">Actions</h6>
+                 <a class="collapse-item" href="{{ route('points.index') }}">View</a>
+                 <a class="collapse-item" href="{{ route('points.create') }}">Add</a>
+             </div>
+         </div>
+     </li>
+
+     <li class="nav-item">
+         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour"
+             aria-expanded="true" aria-controls="collapseFour">
+             <i class="fas fa-fw fa-gift"></i>
+             <span>Gifts</span>
+         </a>
+         <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+             <div class="bg-white py-2 collapse-inner rounded">
+                 <h6 class="collapse-header">Actions</h6>
+                 <a class="collapse-item" href="{{ route('gifts.index') }}">View</a>
+                 <a class="collapse-item" href="{{ route('gifts.create') }}">Add</a>
+             </div>
+         </div>
+     </li>
+
+     <li class="nav-item">
+         <a class="nav-link" href="{{ route('feedbacks.index') }}">
+             <i class="fas fa-fw fa-comments"></i>
+             <span>Feedbacks</span>
+         </a>
+         {{-- <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+             <div class="bg-white py-2 collapse-inner rounded">
+                 <h6 class="collapse-header">Actions</h6>
+                 <a class="collapse-item" href="{{ route('gifts.index') }}">View</a>
+                 <a class="collapse-item" href="{{ route('gifts.create') }}">Add</a>
+             </div>
+         </div> --}}
+     </li>
+
      <!-- Nav Item - Utilities Collapse Menu -->
      {{-- <li class="nav-item">
          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"

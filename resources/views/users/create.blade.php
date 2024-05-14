@@ -43,8 +43,8 @@
                     @enderror
                 </div>
                 <div class="form-group">
-                    <label for="contry">Contry</label>
-                    <input type="text" class="form-control" id="contry" name="country">
+                    <label for="country">Country/Region</label>
+                    <input type="text" class="form-control" id="country" name="country">
                 </div>
             </div>
             <div class="col-md-6">

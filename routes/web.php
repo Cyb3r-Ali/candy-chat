@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\FeedbackController;
+use App\Http\Controllers\GiftController;
+use App\Http\Controllers\PointController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -24,6 +27,11 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::middleware(['auth'])->resource('users', UserController::class);
+Route::middleware(['auth'])->resource('points', PointController::class);
+Route::middleware(['auth'])->resource('feedbacks', FeedbackController::class);
+Route::middleware(['auth'])->post('/points/search', [PointController::class, 'search'])->name('points.search');
+
+Route::middleware(['auth'])->resource('gifts', GiftController::class);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
